@@ -1,0 +1,99 @@
+.chip-container {
+  width: 400px;
+  height: auto;
+  min-height: 34px;
+  border: 2px solid #02080f;
+  padding: 8px;
+  margin: 8px;
+  cursor: text;
+  border-radius: 3px;
+  
+  box-shadow: 0 2px 6px rgba(25,25,25,0.2);
+  
+  }
+
+  .chip-container .chips .chip {
+    display: inline-block;
+    width: auto;
+    
+    background-color: #0077b5;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px;
+    overflow: hidden;
+  }
+  .chip-container .chips .chip{
+    float: left;
+  }
+  
+  .chip-container .chips .chip .chip--button {
+    padding: 8px;
+    cursor: pointer;
+    margin: auto;
+    background-color: #004471;
+    display: inline-block;
+  }
+  .chip-container .chips .chip .chip--text {
+    padding: 8px;
+    cursor: no;
+    display: inline-block;
+    pointer-events: none
+  }
+  
+  .chip-container > input{
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    border: none;
+  margin: 5px 0 0;
+  display: inline-block;
+  background-color: transparent;
+}
+  
+
+  /* Position the chip group below the input bar */
+.chip-container ul.chip-group {
+    position: absolute;
+    top: 100%; /* Place it below the input */
+    left: 0; /* Align with the left edge of the input */
+    width: 100%; /* Take up the full width of the input */
+    margin: 5px 0; /* Add some spacing */
+    padding: 0; /* Remove default list padding */
+    list-style: none; /* Remove default list bullets */
+  }
+  
+  /* Style individual chips within the group */
+  .chip-group li {
+    display: inline-block; /* Display chips horizontally */
+    margin-right: 10px; /* Add spacing between chips */
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 5px;
+  }
+
+  .chip-group li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circle for profile photo */
+    margin-right: 10px; /* Spacing between image and name */
+  }
+  
+  /* Rounded corners for list items and profile photo circle */
+  .chip-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 5px;
+  }
+  
+  .chip-list li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circle for profile photo */
+    margin-right: 10px; /* Spacing between image and name */
+  }
+  
